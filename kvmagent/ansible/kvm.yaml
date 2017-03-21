@@ -111,11 +111,11 @@
       notify:
         - restart debian libvirtd
 
-    - name: copy libvirtd conf
-      copy: src="{{file_root}}/libvirtd.conf" dest=/etc/libvirt/libvirtd.conf
-      notify:
-        - restart redhat libvirtd
-        - restart debian libvirtd
+#    - name: copy libvirtd conf
+#      copy: src="{{file_root}}/libvirtd.conf" dest=/etc/libvirt/libvirtd.conf
+#      notify:
+#        - restart redhat libvirtd
+#        - restart debian libvirtd
 
     - name: copy qemu conf
       copy: src="{{file_root}}/qemu.conf" dest=/etc/libvirt/qemu.conf

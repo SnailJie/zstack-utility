@@ -179,7 +179,7 @@ if distro == "RedHat" or distro == "CentOS":
     copy_arg = CopyArg()
     copy_arg.src = "%s/libvirtd" % file_root
     copy_arg.dest = "/etc/sysconfig/libvirtd"
-    libvirtd_status = copy(copy_arg, host_post_info)
+    #libvirtd_status = copy(copy_arg, host_post_info)
 
 elif distro == "Debian" or distro == "Ubuntu":
     # name: install kvm related packages on Debian based OS
